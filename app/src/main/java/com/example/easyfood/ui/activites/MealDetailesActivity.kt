@@ -4,15 +4,13 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.example.easyfood.data.pojo.MealDB
 import com.example.easyfood.data.pojo.MealDetail
 import com.example.easyfood.mvvm.DetailsMVVM
-import com.example.easyfood.ui.fragments.HomeFragment
 import com.example.easyfood.ui.fragments.HomeFragment.Companion.MEAL_ID
 import com.example.easyfood.ui.fragments.HomeFragment.Companion.MEAL_STR
 import com.example.easyfood.ui.fragments.HomeFragment.Companion.MEAL_THUMB
@@ -31,7 +29,7 @@ class MealDetailesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        detailsMVVM = ViewModelProviders.of(this)[DetailsMVVM::class.java]
+        detailsMVVM = ViewModelProvider(this)[DetailsMVVM::class.java]
         binding = ActivityMealDetailesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -96,7 +94,6 @@ class MealDetailesActivity : AppCompatActivity() {
             dtMeal.strMeal,
             dtMeal.strArea,
             dtMeal.strCategory,
-            
             dtMeal.strInstructions,
             dtMeal.strMealThumb,
             dtMeal.strYoutube
