@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "93576747623",
+    "project_id": "foodbaby-a9787",
+    "storage_bucket": "foodbaby-a9787.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93576747623:android:9021cb0c5ec8da351092c2",
+        "android_client_info": {
+          "package_name": "com.example.easyfood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDteLoPtRKcBC4v7nM8ux0KmpYQNuYZDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

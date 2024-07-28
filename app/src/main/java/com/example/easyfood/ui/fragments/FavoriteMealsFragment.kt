@@ -39,7 +39,6 @@ class FavoriteMealsFragment : Fragment() {
         myAdapter = FavoriteMealsRecyclerAdapter()
         detailsMVVM = ViewModelProvider(this).get(DetailsMVVM::class.java)
     }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -47,7 +46,6 @@ class FavoriteMealsFragment : Fragment() {
         fBinding = FragmentFavoriteMealsBinding.inflate(inflater, container, false)
         return fBinding.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
