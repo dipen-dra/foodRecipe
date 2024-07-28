@@ -40,6 +40,8 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.activity)
+    implementation(libs.firebase.auth.ktx)
     val nav_version = "2.7.2"
 
     // Glide
